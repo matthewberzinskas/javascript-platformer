@@ -2,12 +2,15 @@ function Player(x, y) {
   this.x = x;
   this.y = y;
 
+  this.xspeed = 0;
+  this.yspeed = 0;
+
+  this.friction = 0.6;
+
   this.width = 50;
   this.height = 100;
 
-  this.step = function () {
-    
-  };
+  this.step = function () {};
 
   this.draw = function () {
     ctx.fillStyle = "green";
